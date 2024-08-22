@@ -14,7 +14,7 @@ class _QuizAppState extends State<QuizApp> {
 
   void switchScreen(Widget screen) {
     setState(() {
-      activeScreen = QuestionsScreen();
+      activeScreen = const QuestionsScreen();
     });
   }
 
