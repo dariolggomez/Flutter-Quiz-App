@@ -18,7 +18,6 @@ class _QuizAppState extends State<QuizApp> {
     });
   }
 
-//test
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
