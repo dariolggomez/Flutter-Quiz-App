@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatelessWidget {
-  const StartScreen({
+  const StartScreen(this.switchScreen,{
     super.key,
   });
+
+  final void Function() switchScreen;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +33,9 @@ class StartScreen extends StatelessWidget {
             height: 50,
           ),
           ElevatedButton.icon(
-            onPressed: () {},
+            onPressed: () {
+              switchScreen();
+            },
             style: ElevatedButton.styleFrom(
               foregroundColor: Colors.purple,
               padding: const EdgeInsets.symmetric(
