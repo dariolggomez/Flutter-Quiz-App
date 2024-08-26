@@ -31,10 +31,12 @@ class _QuizAppState extends State<QuizApp> {
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [Colors.blue, Colors.purple],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter)),
+            gradient: LinearGradient(
+              colors: [Colors.blue, Colors.purple],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
           child: activeScreen,
         ),
       ),
